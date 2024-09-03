@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Money Tracker</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Money Tracker</h1>
+    <div class="balance">
+        <h2>Your Balance: $<%= balance %></h2>
+    </div>
+    <div class="income-expense">
+        <div>
+            <h3>Income</h3>
+            <p>$<%= income %></p>
+        </div>
+        <div>
+            <h3>Expense</h3>
+            <p>$<%= expense %></p>
+        </div>
+    </div>
+    <div class="transaction-list">
+        <h3>History</h3>
+        <% transactions.forEach(transaction => { %>
+            <div class="<%= transaction.amount > 0 ? 'income' : 'expense' %>">
+                <span><%= transaction.text %></span>
+                <span>$<%= transaction.amount %></span>
+            </div>
+        <% }) %>
+    </div>
+    <a href="/add-transaction">Add New Transaction</a>
+</body>
+</html>

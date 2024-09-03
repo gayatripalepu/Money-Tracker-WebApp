@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Transaction</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Add New Transaction</h1>
+    <form action="/add-transaction" method="post">
+        <input type="text" name="text" placeholder="Enter description" required>
+        <input type="number" name="amount" placeholder="Enter amount (negative for expense)" required>
+        <button type="submit">Add Transaction</button>
+    </form>
+    <a href="/">Back to Home</a>
+</body>
+</html>

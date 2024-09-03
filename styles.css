@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+h1, h2, h3 {
+    color: #333;
+}
+.balance, .income-expense, .transaction-list {
+    margin: 20px 0;
+}
+.income-expense {
+    display: flex;
+    justify-content: space-between;
+}
+.transaction-list div {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.income {
+    color: green;
+}
+.expense {
+    color: red;
+}
+form input, form button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
